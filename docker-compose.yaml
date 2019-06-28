@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - 27017:27017
+    networks:
+      - testing-network
+
+  node:
+    container_name: node
+    build:
+      context: ./node
+    ports:
+      - 3001:3001
+    links:
+      - mongo
+    networks:
+      - testing-network
+  
+networks:
+  testing-network:
