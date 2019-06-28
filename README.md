@@ -26,23 +26,27 @@ make down
 ```
 curl -X POST -H "Content-Type: application/json" -d '{"comment":"Looking to hire SE Asia’s top dev talent"}' http://localhost:3001/orgs/<org_name>/comments
 ```
+Substitute <org_name> with the actual organisation name from git hub, for example 'octokit'.
 
 ### View comments
 ```
 curl -X GET -H "Content-Type: application/json" http://localhost:3001/orgs/<org_name>/comments
 ```
+Substitute <org_name> with the actual organisation name from git hub, for example 'octokit'.
 
 ### Delete comments
 ```
 curl -X DELETE -H "Content-Type: application/json" http://localhost:3001/orgs/<org_name>/comments
 ```
+Substitute <org_name> with the actual organisation name from git hub, for example 'octokit'.
 
 ### Get members
 ```
-curl -X GET -H "Content-Type: application/json" http://localhost:3001/orgs/<org_name>/members
+curl -X GET -H "Content-Type: application/json" http://localhost:3001/orgs/octokit/members
 ```
+Substitute <org_name> with the actual organisation name from git hub, for example 'octokit'.
 
-Please substitute <org_name> with the actual organisation name from git hub, for example 'octokit'.
+
 
 For full documentation, please refer to the [documentation](https://github.com/prozul/xendit-test/blob/master/Xendit%20Programming%20Test%20Documentation.docx)
 

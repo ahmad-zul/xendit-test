@@ -6,7 +6,7 @@
 .PHONY: rm rmi rmv clean build up logs
 
 # default 'make' command uses docker-compose.yaml to build and up
-.DEFAULT_GOAL := logs
+.DEFAULT_GOAL := up
 
 rm:
 	docker ps -aq | xargs docker rm -f
