@@ -38,7 +38,6 @@ exports.view = function (req, res) {
 
 // Handle delete comments
 exports.delete = function (req, res) {
-
     Comment.updateMany({org_name:req.params.org}, {"$set":{"deleted": true}}, {"multi": true}, (err, comment) => {
         if (err)
             res.send(err);

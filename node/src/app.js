@@ -37,9 +37,6 @@ app.use('*', (req, res) => {
   console.error(JSON.stringify(noResourceError));
 })
 
-// app.listen(PORT, HOST);
-// console.log(`Running on http://${HOST}:${PORT}`);
-
 module.exports = app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
