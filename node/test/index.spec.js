@@ -57,16 +57,16 @@ describe("unit test to delete orgs comment", () => {
   });
 });
 
-describe("unit test to get orgs members", () => {
-  describe("GET /orgs/octokit/members", () => {
-    it("should return expected status", done => {
-      chai
-        .request(server)
-        .delete("/orgs/octokit/members")
-        .end((err, res) => {
-          res.should.have.status(200);
-          done();
-        });
-    });
-  });
-});
+// describe("unit test to get orgs members", () => {
+//   describe("GET /orgs/octokit/members", () => {
+//     it("should return expected status", done => {
+//       chai
+//         .request(server)
+//         .delete("/orgs/octokit/members")
+//         .end((err, res) => {
+//           res.should.have.status(200);
+//           done();
+//         });
+//     });
+//   });
+// });

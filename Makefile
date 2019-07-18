@@ -25,7 +25,7 @@ down:
 build:
 	docker-compose build
 
-up: build
+up: 
 	docker-compose up -d
 
 logs: up

@@ -9,10 +9,10 @@ COPY ./ ./
 RUN npm install
 
 # production image copies dependencies from build image and source files
-FROM node:${NODE_VERSION}
+# FROM node:${NODE_VERSION}
 EXPOSE ${PORT}
-WORKDIR /usr/app
-COPY --from=build /usr/app/node_modules/ ./node_modules/
+# WORKDIR /usr/app
+# COPY --from=build /usr/app/node_modules/ ./node_modules/
 COPY ./package.json ./
 COPY ./src ./src
 COPY ./test ./test
